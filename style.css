@@ -130,15 +130,14 @@ main .furnitures .title {
   font-size: 55px;
 }
 main .furnitures .photos {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: auto auto;
   justify-items: center;
-  align-items: center;
-  gap: 40px;
-  width: 40%;
+  row-gap: 3.5%;
+  width: 60%;
   padding: 50px;
   border-radius: 50px;
-  background-color: white;
+  background-color: rgb(255, 255, 255);
 }
 main .furnitures .photos .photoHeader {
   color: #232323;
@@ -441,11 +440,8 @@ footer .footer-info .footer-contact a {
   main .renovatioGallery .photos img {
     width: 26vw;
   }
-  main .furnitures .photos {
-    width: 40%;
-  }
   main .furnitures .photos img {
-    width: 90%;
+    width: 26vw;
     height: 100%;
     border-radius: 25px;
     cursor: pointer;

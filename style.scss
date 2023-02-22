@@ -173,7 +173,7 @@ main{
             row-gap: 3.5%;
 
 
-            width: 70%;
+            width: 60%;
             padding: 50px;
             border-radius: 50px;
             background-color: rgb(255, 255, 255);
@@ -474,313 +474,313 @@ footer{
 }
 
 
-// @media screen and (min-width: 769px) and (max-width: 1023px) {
-//     header{
-//         padding: 0 50px;
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+    header{
+        padding: 0 50px;
 
-//         .title{
-//             font-size: 5vw;
-//             letter-spacing: 5px;
-//             pointer-events: none;
-//         }
-//     }
+        .title{
+            font-size: 5vw;
+            letter-spacing: 5px;
+            pointer-events: none;
+        }
+    }
 
 
-//     footer{
+    footer{
 
-//         .footer-info{
-//             .title{
-//                 font-size: 5vw;
-//                 letter-spacing: 5px;
-//                 pointer-events: none;
-//             }
-//         }
-//     }
-// }
+        .footer-info{
+            .title{
+                font-size: 5vw;
+                letter-spacing: 5px;
+                pointer-events: none;
+            }
+        }
+    }
+}
 
-// @media screen and (min-width: 481px) and (max-width: 768px){
-//     header{
-//         padding:0 25px;
+@media screen and (min-width: 481px) and (max-width: 768px){
+    header{
+        padding:0 25px;
 
-//         .title{
-//             font-size: 5vw;
-//             letter-spacing: 5px;
-//             pointer-events: none;
-//         }
-//     }
+        .title{
+            font-size: 5vw;
+            letter-spacing: 5px;
+            pointer-events: none;
+        }
+    }
 
-//     main{
-//         padding: 25px 0;
+    main{
+        padding: 25px 0;
         
-//         .user-info{
-//             flex-direction: column;
+        .user-info{
+            flex-direction: column;
 
-//             .user-image{
-//                 border: 3px solid $main;
-//             }
+            .user-image{
+                border: 3px solid $main;
+            }
             
-//             .user-desc{
-//                 border: unset;
-//                 border-radius: 15px;
-//                 width: 80%;
-//                 text-align: justify;
-//                 position: relative;
-//                 left: unset;
-//                 top: 10px;
-//             }
-//         }
+            .user-desc{
+                border: unset;
+                border-radius: 15px;
+                width: 80%;
+                text-align: justify;
+                position: relative;
+                left: unset;
+                top: 10px;
+            }
+        }
 
-//         .renovatioGallery{
+        .renovatioGallery{
 
-//             .photos{
-//                 img{
-//                     width: 26vw;
-//                 }
-//             }
+            .photos{
+                img{
+                    width: 26vw;
+                }
+            }
 
-//         }
+        }
 
-//         .furnitures{
+        .furnitures{
 
-//             .photos{
-//                 width: 40%;
+            .photos{
+                // width: 40%;
                 
-//                 img{
-//                     width:  90%;
-//                     height: 100%;
-//                     border-radius: 25px;
-//                     cursor: pointer;
-//                 }
-//             }
-//         }
+                img{
+                    width: 26vw;
+                    height: 100%;
+                    border-radius: 25px;
+                    cursor: pointer;
+                }
+            }
+        }
 
-//         .contact{
+        .contact{
 
-//             .contact-form{
-//                 width: 75%;
+            .contact-form{
+                width: 75%;
 
-//                 .formHeader{
-//                     font-size: 20px;
-//                 }
+                .formHeader{
+                    font-size: 20px;
+                }
     
-//                 input{
-//                     width: 80%;
-//                 }
+                input{
+                    width: 80%;
+                }
                 
-//                 .message{
-//                     width: 80%;
-//                 }
-//             }
-//         }
+                .message{
+                    width: 80%;
+                }
+            }
+        }
 
-//     }
+    }
 
-//     footer{
-//         padding: 0;
+    footer{
+        padding: 0;
 
-//         .footer-info{
-//             .title{
-//                 font-size: 5vw;
-//                 letter-spacing: 5px;
-//                 pointer-events: none;
-//             }
-//         }
-//     }
+        .footer-info{
+            .title{
+                font-size: 5vw;
+                letter-spacing: 5px;
+                pointer-events: none;
+            }
+        }
+    }
 
-//     .showImg{
-//         img{
-//             width: 70%;
-//         }
-//     }
-// }
+    .showImg{
+        img{
+            width: 70%;
+        }
+    }
+}
 
-// @media screen and (max-width: 480px){
-//     header{
-//         padding: 0 50px;
-//         justify-content: space-around;
+@media screen and (max-width: 480px){
+    header{
+        padding: 0 50px;
+        justify-content: space-around;
         
 
-//         .nav-menu{
-//             background-color: white;
-//             box-shadow: rgba(0, 0, 0, 0.19) 5px 5px 5px, rgba(0, 0, 0, 0.23) 0px 0px 5px;
-//             position: fixed;
-//             right: 0;
-//             top:0;
-//             z-index: 1;
-//             display: block;
-//             transform: translateX(100%);
-//             transition: 0.3s;
+        .nav-menu{
+            background-color: white;
+            box-shadow: rgba(0, 0, 0, 0.19) 5px 5px 5px, rgba(0, 0, 0, 0.23) 0px 0px 5px;
+            position: fixed;
+            right: 0;
+            top:0;
+            z-index: 1;
+            display: block;
+            transform: translateX(100%);
+            transition: 0.3s;
             
-//             ul{
-//                 display: flex;
-//                 flex-direction: column;
-//                 list-style: none;
-//                 min-height: 100vh;
-//                 padding: 70px 30px;
+            ul{
+                display: flex;
+                flex-direction: column;
+                list-style: none;
+                min-height: 100vh;
+                padding: 70px 30px;
     
-//                 li{
-//                     margin: 20px 0;
+                li{
+                    margin: 20px 0;
                 
-//                     a{
-//                         text-decoration: none;
-//                         color:$fontColor;
-//                         font-size: 20px;
-//                     }
-//                 }
-//             }
-//             .closeBtn{
-//                 border:none;
-//                 background-color: transparent;
-//             }
-//         }
+                    a{
+                        text-decoration: none;
+                        color:$fontColor;
+                        font-size: 20px;
+                    }
+                }
+            }
+            .closeBtn{
+                border:none;
+                background-color: transparent;
+            }
+        }
 
-//         .title{
-//             font-size: 7vw;
-//             letter-spacing: 5px;
-//             pointer-events: none;
-//         }
-//     }
+        .title{
+            font-size: 7vw;
+            letter-spacing: 5px;
+            pointer-events: none;
+        }
+    }
 
-//     main{
-//         padding: 50px 0;
+    main{
+        padding: 50px 0;
 
-//         .user-info{
-//             flex-direction: column;
+        .user-info{
+            flex-direction: column;
 
-//             .user-image{
-//                 border: 3px solid $main;
+            .user-image{
+                border: 3px solid $main;
                 
-//                 img{
-//                     width: 240px;
-//                 }
-//             }
+                img{
+                    width: 240px;
+                }
+            }
             
-//             .user-desc{
-//                 border: unset;
-//                 border-radius: 15px;
-//                 width: 80%;
-//                 text-align: justify;
-//                 position: relative;
-//                 left: unset;
-//                 top: 10px;
-//             }
-//         }
+            .user-desc{
+                border: unset;
+                border-radius: 15px;
+                width: 80%;
+                text-align: justify;
+                position: relative;
+                left: unset;
+                top: 10px;
+            }
+        }
 
-//         .renovatioGallery{
-//             gap: 60px;
+        .renovatioGallery{
+            gap: 60px;
 
-//             .title{
-//                 font-size: 35px;
-//             }
+            .title{
+                font-size: 35px;
+            }
 
-//             .photos{
-//                 padding: 35px 20px;
-//                 width: 70%;
-//                 row-gap: 3.5%;
+            .photos{
+                padding: 35px 20px;
+                width: 70%;
+                row-gap: 3.5%;
 
-//                 .photoHeader{
-//                     color:$fontColor;
-//                     font-size: 8vw;
-//                     text-transform: uppercase;
-//                 }
+                .photoHeader{
+                    color:$fontColor;
+                    font-size: 8vw;
+                    text-transform: uppercase;
+                }
 
-//                 img{
-//                     width: 30vw;
-//                 }
-//             }
+                img{
+                    width: 30vw;
+                }
+            }
 
-//         }
+        }
         
-//         .furnitures{
+        .furnitures{
 
-//             .title{
-//                 font-size: 35px;
-//             }
+            .title{
+                font-size: 35px;
+            }
 
-//             .photos{
-//                 width: 65%;
-//                 gap: 15px;
-//                 padding: 30px;
+            .photos{
+                width: 65%;
+                gap: 15px;
+                padding: 30px;
                 
-//                 img{
-//                     width:  100%;
-//                     height: 100%;
-//                     border-radius: 25px;
-//                     cursor: pointer;
-//                 }
-//             }
-//         }
+                img{
+                    width:  100%;
+                    height: 100%;
+                    border-radius: 25px;
+                    cursor: pointer;
+                }
+            }
+        }
 
-//         .contact{
+        .contact{
 
-//             .contactTitle{
-//                 font-size: 35px;
-//             }
+            .contactTitle{
+                font-size: 35px;
+            }
 
-//             .contact-form{
+            .contact-form{
 
-//                 width: 75%;
+                width: 75%;
 
-//                 .formHeader{
-//                     font-size: 20px;
-//                 }
+                .formHeader{
+                    font-size: 20px;
+                }
     
-//                 input{
-//                     width: 100%;
-//                 }
+                input{
+                    width: 100%;
+                }
                 
-//                 .message{
-//                     width: 100%;
-//                 }
+                .message{
+                    width: 100%;
+                }
 
-//                 .submitBtn{
-//                     width: 45%;
-//                 }
-//             }
-//         }
-//     }
+                .submitBtn{
+                    width: 45%;
+                }
+            }
+        }
+    }
 
-//     footer{
-//         padding: 0;
+    footer{
+        padding: 0;
 
-//         .footer-info{
-//             padding: 15px 0;
-//             display: flex;
-//             flex-direction: column;
-//             justify-content: center;
-//             align-items: center;
-//             text-align: center;
+        .footer-info{
+            padding: 15px 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
 
 
-//             .title{
-//                 font-size: 7vw;
-//                 letter-spacing: 5px;
-//                 pointer-events: none;
-//             }
-//         }
+            .title{
+                font-size: 7vw;
+                letter-spacing: 5px;
+                pointer-events: none;
+            }
+        }
     
     
-//     }
+    }
 
-//     .showImg{
-//         img{
-//             width: 85%;
-//         }
-//     }
+    .showImg{
+        img{
+            width: 85%;
+        }
+    }
 
-//     .navMenuBtn{
-//         display: flex;
-//         position: fixed;
-//         z-index: 1;
-//     }
+    .navMenuBtn{
+        display: flex;
+        position: fixed;
+        z-index: 1;
+    }
 
-//     .closeBtn{
-//         display: block;
-//         top: 10px;
-//         left: 10px;
-//     }
+    .closeBtn{
+        display: block;
+        top: 10px;
+        left: 10px;
+    }
 
-//     .topBtn{
-//         display: none;
-//     }
-// }
+    .topBtn{
+        display: none;
+    }
+}
