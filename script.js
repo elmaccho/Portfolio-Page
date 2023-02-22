@@ -4,15 +4,21 @@ const navMenu = document.querySelector('.nav-menu')
 const imgtars = document.querySelectorAll('.test')
 const navLinks = document.querySelectorAll('li')
 
+const header = document.querySelector('.header')
+
 const showImg = document.querySelector('.showImg')
 const closeImg = document.querySelector('.closeImg')
 const imgAt = document.querySelector('.imgAt')
 
 const submitBtn = document.querySelector('.submitBtn')
 const alertBox = document.querySelector('.alert')
-const emailInput = document.querySelector('.emailInput')
-const nameInput = document.querySelector('.nameInput')
+let emailInput = document.querySelector('.emailInput')
+let nameInput = document.querySelector('.nameInput')
+let messageInput = document.querySelector('.message')
 
+const stickyHeader = () => {
+    header.classList.toggle('sticky', window.scrollY > 0)
+}
 
 const openMenu = () => {
     navMenu.style.transform = "translateX(0)"
@@ -28,7 +34,7 @@ const closeOutside = (e) => {
     }
 }
 
-const closeMenuNav = (e) => {
+const closeMenuNav = () => {
     navMenu.style.transform = ""
 }
 
@@ -51,23 +57,26 @@ const outsideImage = (e) => {
     }
 }
 
+// action="https://formsubmit.io/send/maciek.chojnacki22@wp.pl"
 
 const popMessage = () => {
-    alertBox.style.display='flex'
-
-    setTimeout(() => {
-        alertBox.classList.add('alertExit')
+    if(emailInput.value !== "" && nameInput.value !== "" && messageInput.value !== ""){
+        alertBox.style.display='flex'
 
         setTimeout(() => {
-            location.reload() 
-         }, 1000);
-
-    }, 2500);
-
-    emailInput.value = ""
-    nameInput.value = ""
-
-
+            alertBox.classList.add('alertExit')
+    
+            // setTimeout(() => {
+            //     location.reload() 
+            //  }, 1000);
+    
+        }, 2500);
+    
+        emailInput.value = ""
+        nameInput.value = ""
+    }
+    else{
+    }
 }
 
 for(const imgtar of imgtars){
@@ -78,15 +87,16 @@ for(const navLink of navLinks){
     navLink.addEventListener('click', closeMenuNav)
 }
 
+
+
 window.addEventListener("scroll", () => {
     const topBtn = document.querySelector('.topBtn')
     topBtn.classList.toggle("showGoUpBtn", window.scrollY > 200)
 })
-
-
 closeBtn.addEventListener('click', closeMenu)
 navMenuBtn.addEventListener('click', openMenu)
 document.addEventListener('click', closeOutside)
 closeImg.addEventListener('click', closeImgWindow)
 document.addEventListener('click', outsideImage)
-submitBtn.addEventListener('submit', popMessage)
+window.addEventListener('scroll', stickyHeader)
+// submitBtn.addEventListener('submit', popMessage)

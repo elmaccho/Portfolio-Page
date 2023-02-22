@@ -31,7 +31,8 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-
+    background-color: white;
+    transition: 0.3s;
 
     .title{
         font-size: 55px;
@@ -66,6 +67,13 @@ header{
     }
 }
 
+.sticky{
+    position: fixed;
+    height: 100px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    z-index: 1;
+}
+
 main{
     background-color: $BGcolor;
     width: 100%;
@@ -75,15 +83,19 @@ main{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 100px 0;
     gap: 130px;
 
     .user-info{
+        padding: 100px 0;
         display: flex;
         justify-content: center;
         align-items: center;
         flex-direction: row;
         width: 100%;
+        background-image: url('./jak-zalozyc-zaklad-stolarski-1200x801.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
 
         .user-image{
             border-top: 3px solid $main;
@@ -102,10 +114,11 @@ main{
             // border-top: 2px solid $main;
             // border-bottom: 2px solid $main;
             border-radius: 0 15px 15px 0;
-            padding: 10px 20px;
+            padding: 30px 20px;
             background-color: white;
             position: relative;
             left: -20px;
+            font-size: 20px;
         }
     }
 
@@ -200,10 +213,15 @@ main{
         align-items: center;
         flex-direction: column;
         gap: 50px;
+        background-image: url('./jak-zalozyc-zaklad-stolarski-1200x801.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        padding: 50px 0;
 
         .contactTitle{
-            font-size: 55px;
-            color: $fontColor;
+            font-size: 75px;
+            color: white;
         }
 
         .contact-form{
@@ -214,34 +232,50 @@ main{
             flex-direction: column;
             gap: 10px;
             padding: 35px;
-            background-color: white;
+            // background-color: white;
             border-radius: 30px;
 
             .formHeader{
-                font-size: 20px;
-                color: $fontColor;
+                font-size: 25px;
+                color: white;
             }
 
             input{
-                width: 400px;
-                height: 30px;
+                width: 500px;
+                height: 35px;
                 border-radius: 10px;
-                border: 1px solid #232323;
+                border: 3px solid white;
                 outline: none;
                 text-indent: 15px;
                 caret-color: $BGcolor;
+                background-color: transparent;
+                color:white;
+                transition: 0.3s;
+            }
+
+            input:focus{
+                background-color: white;
+                color:$fontColor;
             }
             
             .message{
-                min-height: 100px;
-                width: 400px;
+                min-height: 150px;
+                width: 500px;
                 resize: none;
                 border-radius: 10px;
-                border: 1px solid #232323;
+                border: 3px solid white;
                 outline: none;
                 padding: 10px 15px;
                 box-sizing: border-box;
                 caret-color: $BGcolor;
+                background-color: transparent;
+                transition: 0.3s;
+                color: white;
+            }
+
+            .message:focus{
+                background-color: white;
+                color:$fontColor;
             }
 
             .submitBtn{
@@ -251,13 +285,13 @@ main{
                 cursor: pointer;
                 transition: 0.3s;
                 text-transform: uppercase;
-                background-color: white;
+                background-color: transparent;
                 margin-top: 15px;
             }
             
             .submitBtn:hover{
                 background-color: $BGcolor;
-                border: 1px solid white;
+                border: 1px solid $BGcolor;
                 color:$fontColor2;
             }
         }
@@ -510,7 +544,6 @@ footer{
     }
 
     main{
-        padding: 25px 0;
         
         .user-info{
             flex-direction: column;
@@ -555,6 +588,11 @@ footer{
         }
 
         .contact{
+            gap: 30px;
+
+            .contactTitle{
+                font-size: 60px;
+            }
 
             .contact-form{
                 width: 75%;
@@ -598,7 +636,7 @@ footer{
     header{
         padding: 0 50px;
         justify-content: space-around;
-        
+        position: unset;
 
         .nav-menu{
             background-color: white;
@@ -640,9 +678,13 @@ footer{
             pointer-events: none;
         }
     }
-
+    .sticky{
+        position: unset;
+        height: 150px;
+        box-shadow: unset;
+        z-index: 1;
+    }
     main{
-        padding: 50px 0;
 
         .user-info{
             flex-direction: column;
@@ -712,9 +754,10 @@ footer{
         }
 
         .contact{
+            gap: 30px;
 
             .contactTitle{
-                font-size: 35px;
+                font-size: 60px;
             }
 
             .contact-form{

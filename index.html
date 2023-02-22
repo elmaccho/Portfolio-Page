@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header id="start">
+    <header id="start" class="header">
         <p class="title">Górski Meble</p>
 
         <button class="navMenuBtn"><i class="fa-solid fa-bars"></i></button>
@@ -20,7 +20,7 @@
 
             <ul>
                 <li>
-                    <a href="#start">Start</a>
+                    <a href="#">Start</a>
                 </li>
                 <li>
                     <a href="#gallery">Galeria</a>
@@ -40,7 +40,7 @@
                 <img src="./profile-circle-svgrepo-com.svg" alt="">
             </div>
             <div class="user-desc">
-                <p>Tu bedzie jakis tekst itp</p>
+                <p>Witam! <br> Nazywam się Krzysztof Górski. Od X lat zajmuję się usługami stolarskimi. </p>
             </div>
         </div>
 
@@ -71,7 +71,9 @@
 
         <div class="contact" id="contact">
             <h1 class="contactTitle">Kontakt</h1>
-            <form class="contact-form" action="https://formsubmit.io/send/maciek.chojnacki22@wp.pl">
+            <form class="contact-form" action="https://formsubmit.io/send/jebacdisatetrisa2@wp.pl" onsubmit="return popMessage()">
+                <!-- <input name="_redirect" type="hidden" id="name" value="#"> -->
+
                 <p class="formHeader">Imię i nazwisko</p>
                 <input type="text" name="" id="" class="nameInput" required>
                 
@@ -81,7 +83,10 @@
                 <p class="formHeader">Wiadomość</p>
                 <textarea class="message" name="" id="" required>Witam! Jestem zainteresowany usługą meblarską. Bardzo proszę o kontakt.</textarea>
             
-                <input class="submitBtn" type="submit" value="Prześlij" onclick="popMessage()">
+                <input class="submitBtn" type="submit" value="Prześlij">
+
+
+                <input name="_formsubmit_id" type="text" style="display:none">
             </form>
         </div>
 
@@ -93,9 +98,9 @@
             <p class="title">Górski Meble</p>
 
             <div class="footer-contact">
-                <p>Telefon: 111-222-333</p>
-                <p>E-mail: qwerty@wp.pl</p>
-                <!-- <p>Adres: unknown</p> -->
+                <p>Telefon: 603-690-661</p>
+                <p>E-mail: K.gorski123@wp.pl</p>
+                <p>Adres: Dąbrowa Jastrzębska 35e</p>
                 <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100090265572911" target="_blank">
                                 <i class="fa-brands fa-facebook"></i>
                             </a></p>

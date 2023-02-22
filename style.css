@@ -23,6 +23,8 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: white;
+  transition: 0.3s;
 }
 header .title {
   font-size: 55px;
@@ -48,6 +50,13 @@ header .nav-menu ul li a:hover {
   text-shadow: 5px 5px 20px #FFA500;
 }
 
+.sticky {
+  position: fixed;
+  height: 100px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  z-index: 1;
+}
+
 main {
   background-color: #FFA500;
   width: 100%;
@@ -56,15 +65,19 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 100px 0;
   gap: 130px;
 }
 main .user-info {
+  padding: 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   width: 100%;
+  background-image: url("./jak-zalozyc-zaklad-stolarski-1200x801.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 main .user-info .user-image {
   border-top: 3px solid rgb(255, 102, 0);
@@ -79,10 +92,11 @@ main .user-info .user-image img {
 main .user-info .user-desc {
   width: 50%;
   border-radius: 0 15px 15px 0;
-  padding: 10px 20px;
+  padding: 30px 20px;
   background-color: white;
   position: relative;
   left: -20px;
+  font-size: 20px;
 }
 main .renovatioGallery {
   width: 100%;
@@ -157,10 +171,15 @@ main .contact {
   align-items: center;
   flex-direction: column;
   gap: 50px;
+  background-image: url("./jak-zalozyc-zaklad-stolarski-1200x801.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 50px 0;
 }
 main .contact .contactTitle {
-  font-size: 55px;
-  color: #232323;
+  font-size: 75px;
+  color: white;
 }
 main .contact .contact-form {
   width: 50%;
@@ -170,32 +189,45 @@ main .contact .contact-form {
   flex-direction: column;
   gap: 10px;
   padding: 35px;
-  background-color: white;
   border-radius: 30px;
 }
 main .contact .contact-form .formHeader {
-  font-size: 20px;
-  color: #232323;
+  font-size: 25px;
+  color: white;
 }
 main .contact .contact-form input {
-  width: 400px;
-  height: 30px;
+  width: 500px;
+  height: 35px;
   border-radius: 10px;
-  border: 1px solid #232323;
+  border: 3px solid white;
   outline: none;
   text-indent: 15px;
   caret-color: #FFA500;
+  background-color: transparent;
+  color: white;
+  transition: 0.3s;
+}
+main .contact .contact-form input:focus {
+  background-color: white;
+  color: #232323;
 }
 main .contact .contact-form .message {
-  min-height: 100px;
-  width: 400px;
+  min-height: 150px;
+  width: 500px;
   resize: none;
   border-radius: 10px;
-  border: 1px solid #232323;
+  border: 3px solid white;
   outline: none;
   padding: 10px 15px;
   box-sizing: border-box;
   caret-color: #FFA500;
+  background-color: transparent;
+  transition: 0.3s;
+  color: white;
+}
+main .contact .contact-form .message:focus {
+  background-color: white;
+  color: #232323;
 }
 main .contact .contact-form .submitBtn {
   width: 150px;
@@ -204,12 +236,12 @@ main .contact .contact-form .submitBtn {
   cursor: pointer;
   transition: 0.3s;
   text-transform: uppercase;
-  background-color: white;
+  background-color: transparent;
   margin-top: 15px;
 }
 main .contact .contact-form .submitBtn:hover {
   background-color: #FFA500;
-  border: 1px solid white;
+  border: 1px solid #FFA500;
   color: white;
 }
 
@@ -419,9 +451,6 @@ footer .footer-info .footer-contact a {
     letter-spacing: 5px;
     pointer-events: none;
   }
-  main {
-    padding: 25px 0;
-  }
   main .user-info {
     flex-direction: column;
   }
@@ -445,6 +474,12 @@ footer .footer-info .footer-contact a {
     height: 100%;
     border-radius: 25px;
     cursor: pointer;
+  }
+  main .contact {
+    gap: 30px;
+  }
+  main .contact .contactTitle {
+    font-size: 60px;
   }
   main .contact .contact-form {
     width: 75%;
@@ -474,6 +509,7 @@ footer .footer-info .footer-contact a {
   header {
     padding: 0 50px;
     justify-content: space-around;
+    position: unset;
   }
   header .nav-menu {
     background-color: white;
@@ -510,8 +546,11 @@ footer .footer-info .footer-contact a {
     letter-spacing: 5px;
     pointer-events: none;
   }
-  main {
-    padding: 50px 0;
+  .sticky {
+    position: unset;
+    height: 150px;
+    box-shadow: unset;
+    z-index: 1;
   }
   main .user-info {
     flex-direction: column;
@@ -564,8 +603,11 @@ footer .footer-info .footer-contact a {
     border-radius: 25px;
     cursor: pointer;
   }
+  main .contact {
+    gap: 30px;
+  }
   main .contact .contactTitle {
-    font-size: 35px;
+    font-size: 60px;
   }
   main .contact .contact-form {
     width: 75%;
