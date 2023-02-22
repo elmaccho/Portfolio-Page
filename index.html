@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/4798a03daf.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header id="start">
+        <p class="title">Górski Meble</p>
+
+        <button class="navMenuBtn"><i class="fa-solid fa-bars"></i></button>
+
+        <div class="nav-menu">
+            
+            <button class="closeBtn"><i class="fa-solid fa-xmark"></i></button>
+
+            <ul>
+                <li>
+                    <a href="#start">Start</a>
+                </li>
+                <li>
+                    <a href="#gallery">Galeria</a>
+                </li>
+                <li>
+                    <a href="#contact">Kontakt</a>
+                </li>
+            </ul>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="user-info">
+            <div class="user-image">
+                <img src="./profile-circle-svgrepo-com.svg" alt="">
+            </div>
+            <div class="user-desc">
+                <p>Tu bedzie jakis tekst itp</p>
+            </div>
+        </div>
+
+        <div class="renovatioGallery" id="gallery">
+            <p class="title">Renowacja mebli</p>
+
+            <div class="photos">
+                <p class="photoHeader">Przed</p>
+                <p class="photoHeader">Po</p>
+
+                <img class="test" src="./krzesloPrzed.jpg" alt="">
+                <img class="test" src="./krzesloPo.jpg" alt="">
+
+                <img class="test" src="./toaletkaPrzed.jpg" alt="">
+                <img class="test" src="./toaletkaPo.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="furnitures">
+            <p class="title">Sprzedaż mebli</p>
+
+            <div class="photos">
+                <img class="test" src="./stolikikawowe.jpg" alt="">
+                <img class="test" src="./taboret.jpg" alt="">
+                <img class="test" src="./taboret1.jpg" alt="">
+            </div>
+        </div>
+
+        <div class="contact" id="contact">
+            <h1 class="contactTitle">Kontakt</h1>
+            <form class="contact-form" action="https://formsubmit.io/send/maciek.chojnacki22@wp.pl">
+                <p class="formHeader">Imię i nazwisko</p>
+                <input type="text" name="" id="" class="nameInput" required>
+                
+                <p class="formHeader">E-mail</p>
+                <input type="email" name="" id="" class="emailInput" required>
+
+                <p class="formHeader">Wiadomość</p>
+                <textarea class="message" name="" id="" required>Witam! Jestem zainteresowany usługą meblarską. Bardzo proszę o kontakt.</textarea>
+            
+                <input class="submitBtn" type="submit" value="Prześlij" onclick="popMessage()">
+            </form>
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="footer-info">
+            <p class="title">Górski Meble</p>
+
+            <div class="footer-contact">
+                <p>Telefon: 111-222-333</p>
+                <p>E-mail: qwerty@wp.pl</p>
+                <!-- <p>Adres: unknown</p> -->
+                <p>Facebook: <a href="https://www.facebook.com/profile.php?id=100090265572911" target="_blank">
+                                <i class="fa-brands fa-facebook"></i>
+                            </a></p>
+            </div>
+        </div>
+
+        <div class="copyright">
+            Copyright © Maciej Chojnacki
+        </div>
+
+    </footer>
+
+    <div class="topBtn">
+        <div class="goUp">
+            <a href="#" class="goUpBtn" type="button">
+                <i class="fa-solid fa-caret-up"></i>
+                <p>do góry</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="showImg">
+        <button class="closeImg">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <img class="imgAt">
+    </div>
+
+    <div class="alert">
+        <p class="alert-text">Wiadomość wysłana!</p>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,5 @@
+header - tytul, nav menu
+
+main - opis uzytkownika, zdjecia (przed i po), kontakt, 
+
+footer - kontakt, tytul, 

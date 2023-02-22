@@ -1,0 +1,621 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit&display=swap");
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Kanit", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  gap: 10px;
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  height: 150px;
+  padding: 0 100px;
+  box-sizing: border-box;
+  transform: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .title {
+  font-size: 55px;
+  letter-spacing: 5px;
+  pointer-events: none;
+}
+header .nav-menu ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+header .nav-menu ul li {
+  margin: 0 20px;
+}
+header .nav-menu ul li a {
+  text-decoration: none;
+  color: #232323;
+  font-size: 20px;
+  transition: 0.3s;
+}
+header .nav-menu ul li a:hover {
+  color: #FFA500;
+  text-shadow: 5px 5px 20px #FFA500;
+}
+
+main {
+  background-color: #FFA500;
+  width: 100%;
+  height: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 100px 0;
+  gap: 130px;
+}
+main .user-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+}
+main .user-info .user-image {
+  border-top: 3px solid rgb(255, 102, 0);
+  border-bottom: 3px solid rgb(255, 102, 0);
+  border-left: 3px solid rgb(255, 102, 0);
+  border-radius: 100%;
+  background-color: white;
+}
+main .user-info .user-image img {
+  width: 300px;
+}
+main .user-info .user-desc {
+  width: 50%;
+  border-radius: 0 15px 15px 0;
+  padding: 10px 20px;
+  background-color: white;
+  position: relative;
+  left: -20px;
+}
+main .renovatioGallery {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 60px;
+}
+main .renovatioGallery .title {
+  font-size: 55px;
+}
+main .renovatioGallery .photos {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-items: center;
+  row-gap: 3.5%;
+  width: 60%;
+  padding: 50px;
+  border-radius: 50px;
+  background-color: white;
+}
+main .renovatioGallery .photos .photoHeader {
+  color: #232323;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+main .renovatioGallery .photos img {
+  width: 90%;
+  height: 100%;
+  border-radius: 25px;
+  cursor: pointer;
+}
+main .furnitures {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 60px;
+}
+main .furnitures .title {
+  font-size: 55px;
+}
+main .furnitures .photos {
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  align-items: center;
+  gap: 40px;
+  width: 40%;
+  padding: 50px;
+  border-radius: 50px;
+  background-color: white;
+}
+main .furnitures .photos .photoHeader {
+  color: #232323;
+  font-size: 35px;
+  text-transform: uppercase;
+}
+main .furnitures .photos img {
+  width: 90%;
+  height: 100%;
+  border-radius: 25px;
+  cursor: pointer;
+}
+main .contact {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+main .contact .contactTitle {
+  font-size: 55px;
+  color: #232323;
+}
+main .contact .contact-form {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 35px;
+  background-color: white;
+  border-radius: 30px;
+}
+main .contact .contact-form .formHeader {
+  font-size: 20px;
+  color: #232323;
+}
+main .contact .contact-form input {
+  width: 400px;
+  height: 30px;
+  border-radius: 10px;
+  border: 1px solid #232323;
+  outline: none;
+  text-indent: 15px;
+  caret-color: #FFA500;
+}
+main .contact .contact-form .message {
+  min-height: 100px;
+  width: 400px;
+  resize: none;
+  border-radius: 10px;
+  border: 1px solid #232323;
+  outline: none;
+  padding: 10px 15px;
+  box-sizing: border-box;
+  caret-color: #FFA500;
+}
+main .contact .contact-form .submitBtn {
+  width: 150px;
+  height: 35px;
+  text-indent: 0;
+  cursor: pointer;
+  transition: 0.3s;
+  text-transform: uppercase;
+  background-color: white;
+  margin-top: 15px;
+}
+main .contact .contact-form .submitBtn:hover {
+  background-color: #FFA500;
+  border: 1px solid white;
+  color: white;
+}
+
+.showImg {
+  width: 100%;
+  min-height: 100vh;
+  background-color: rgba(2, 2, 2, 0.809);
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.showImg img {
+  width: 500px;
+}
+.showImg .closeImg {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 35px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}
+.showImg .closeImg:hover {
+  opacity: 60%;
+}
+
+.showImgToggle {
+  display: flex;
+  overflow-y: hidden;
+}
+
+footer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+footer .footer-info {
+  padding: 0 25px;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .footer-info .title {
+  font-size: 55px;
+  letter-spacing: 5px;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-info .footer-contact {
+  padding: 25px;
+}
+footer .footer-info .footer-contact a {
+  color: #1877f2;
+}
+
+.copyright {
+  font-size: 15px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.navMenuBtn {
+  border: none;
+  background-color: transparent;
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  background-color: white;
+  padding: 8px 10px;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  border-radius: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.navMenuBtn:hover {
+  color: #FFA500;
+}
+
+.closeBtn {
+  border: none;
+  background-color: transparent;
+  font-size: 35px;
+  cursor: pointer;
+  position: absolute;
+  display: none;
+  transition: 0.3s;
+}
+
+.closeBtn:hover {
+  color: #FFA500;
+}
+
+.topBtn {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  scale: 0;
+  transition: 0.3s;
+}
+.topBtn .goUp {
+  transition: 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 50px;
+  padding: 0 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.topBtn .goUp a {
+  scroll-behavior: smooth;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #232323;
+  text-decoration: none;
+  text-align: center;
+}
+.topBtn .goUp a i {
+  font-size: 60px;
+  pointer-events: none;
+}
+.topBtn .goUp a p {
+  position: relative;
+  top: -20px;
+  display: none;
+}
+
+.showGoUpBtn {
+  scale: 1;
+}
+
+.alert {
+  width: 50%;
+  height: 80px;
+  background-color: white;
+  border-radius: 15px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 20px;
+}
+.alert .alert-text {
+  font-size: 20px;
+}
+
+.alertExit {
+  animation-name: alertExit;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes alertExit {
+  0% {
+    transform: translateX(0);
+  }
+  60% {
+    transform: translateX(-10%);
+  }
+  100% {
+    transform: translateX(200%);
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1023px) {
+  header {
+    padding: 0 50px;
+  }
+  header .title {
+    font-size: 5vw;
+    letter-spacing: 5px;
+    pointer-events: none;
+  }
+  footer .footer-info .title {
+    font-size: 5vw;
+    letter-spacing: 5px;
+    pointer-events: none;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  header {
+    padding: 0 25px;
+  }
+  header .title {
+    font-size: 5vw;
+    letter-spacing: 5px;
+    pointer-events: none;
+  }
+  main {
+    padding: 25px 0;
+  }
+  main .user-info {
+    flex-direction: column;
+  }
+  main .user-info .user-image {
+    border: 3px solid rgb(255, 102, 0);
+  }
+  main .user-info .user-desc {
+    border: unset;
+    border-radius: 15px;
+    width: 80%;
+    text-align: justify;
+    position: relative;
+    left: unset;
+    top: 10px;
+  }
+  main .renovatioGallery .photos img {
+    width: 26vw;
+  }
+  main .furnitures .photos {
+    width: 40%;
+  }
+  main .furnitures .photos img {
+    width: 90%;
+    height: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  main .contact .contact-form {
+    width: 75%;
+  }
+  main .contact .contact-form .formHeader {
+    font-size: 20px;
+  }
+  main .contact .contact-form input {
+    width: 80%;
+  }
+  main .contact .contact-form .message {
+    width: 80%;
+  }
+  footer {
+    padding: 0;
+  }
+  footer .footer-info .title {
+    font-size: 5vw;
+    letter-spacing: 5px;
+    pointer-events: none;
+  }
+  .showImg img {
+    width: 70%;
+  }
+}
+@media screen and (max-width: 480px) {
+  header {
+    padding: 0 50px;
+    justify-content: space-around;
+  }
+  header .nav-menu {
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.19) 5px 5px 5px, rgba(0, 0, 0, 0.23) 0px 0px 5px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1;
+    display: block;
+    transform: translateX(100%);
+    transition: 0.3s;
+  }
+  header .nav-menu ul {
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    min-height: 100vh;
+    padding: 70px 30px;
+  }
+  header .nav-menu ul li {
+    margin: 20px 0;
+  }
+  header .nav-menu ul li a {
+    text-decoration: none;
+    color: #232323;
+    font-size: 20px;
+  }
+  header .nav-menu .closeBtn {
+    border: none;
+    background-color: transparent;
+  }
+  header .title {
+    font-size: 7vw;
+    letter-spacing: 5px;
+    pointer-events: none;
+  }
+  main {
+    padding: 50px 0;
+  }
+  main .user-info {
+    flex-direction: column;
+  }
+  main .user-info .user-image {
+    border: 3px solid rgb(255, 102, 0);
+  }
+  main .user-info .user-image img {
+    width: 240px;
+  }
+  main .user-info .user-desc {
+    border: unset;
+    border-radius: 15px;
+    width: 80%;
+    text-align: justify;
+    position: relative;
+    left: unset;
+    top: 10px;
+  }
+  main .renovatioGallery {
+    gap: 60px;
+  }
+  main .renovatioGallery .title {
+    font-size: 35px;
+  }
+  main .renovatioGallery .photos {
+    padding: 35px 20px;
+    width: 70%;
+    row-gap: 3.5%;
+  }
+  main .renovatioGallery .photos .photoHeader {
+    color: #232323;
+    font-size: 8vw;
+    text-transform: uppercase;
+  }
+  main .renovatioGallery .photos img {
+    width: 30vw;
+  }
+  main .furnitures .title {
+    font-size: 35px;
+  }
+  main .furnitures .photos {
+    width: 65%;
+    gap: 15px;
+    padding: 30px;
+  }
+  main .furnitures .photos img {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  main .contact .contactTitle {
+    font-size: 35px;
+  }
+  main .contact .contact-form {
+    width: 75%;
+  }
+  main .contact .contact-form .formHeader {
+    font-size: 20px;
+  }
+  main .contact .contact-form input {
+    width: 100%;
+  }
+  main .contact .contact-form .message {
+    width: 100%;
+  }
+  main .contact .contact-form .submitBtn {
+    width: 45%;
+  }
+  footer {
+    padding: 0;
+  }
+  footer .footer-info {
+    padding: 15px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  footer .footer-info .title {
+    font-size: 7vw;
+    letter-spacing: 5px;
+    pointer-events: none;
+  }
+  .showImg img {
+    width: 85%;
+  }
+  .navMenuBtn {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+  }
+  .closeBtn {
+    display: block;
+    top: 10px;
+    left: 10px;
+  }
+  .topBtn {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */
