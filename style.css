@@ -24,7 +24,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 header .title {
   font-size: 55px;
@@ -80,23 +80,27 @@ main .user-info {
   background-attachment: fixed;
 }
 main .user-info .user-image {
-  border-top: 3px solid rgb(255, 102, 0);
-  border-bottom: 3px solid rgb(255, 102, 0);
-  border-left: 3px solid rgb(255, 102, 0);
-  border-radius: 100%;
   background-color: white;
+  border-radius: 100%;
+  padding: 20px;
+  width: 320px;
+  height: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-main .user-info .user-image img {
+main .user-info .user-image .profile-photo {
   width: 300px;
+  border-radius: 100%;
 }
 main .user-info .user-desc {
-  width: 50%;
+  width: 60%;
   border-radius: 0 15px 15px 0;
-  padding: 30px 20px;
+  padding: 20px 15px;
   background-color: white;
   position: relative;
-  left: -20px;
-  font-size: 20px;
+  left: -18px;
+  font-size: 1.7vw;
 }
 main .renovatioGallery {
   width: 100%;
@@ -465,6 +469,8 @@ footer .footer-info .footer-contact a {
     position: relative;
     left: unset;
     top: 10px;
+    font-size: 20px;
+    text-align: center;
   }
   main .renovatioGallery .photos img {
     width: 26vw;
@@ -569,6 +575,8 @@ footer .footer-info .footer-contact a {
     position: relative;
     left: unset;
     top: 10px;
+    font-size: 20px;
+    text-align: center;
   }
   main .renovatioGallery {
     gap: 60px;

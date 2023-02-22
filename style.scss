@@ -32,7 +32,7 @@ header{
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    transition: 0.3s;
+    transition: 0.5s;
 
     .title{
         font-size: 55px;
@@ -98,27 +98,35 @@ main{
         background-attachment: fixed;
 
         .user-image{
-            border-top: 3px solid $main;
-            border-bottom: 3px solid $main;
-            border-left: 3px solid $main;
-            border-radius: 100%;
+            // border-top: 3px solid $main;
+            // border-bottom: 3px solid $main;
+            // border-left: 3px solid $main;
             background-color: white;
+            border-radius: 100%;
+            padding: 20px;
+            width: 320px;
+            height: 320px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
 
-            img{
+            .profile-photo{
                 width: 300px;
+                border-radius: 100%;
             }
         }
 
         .user-desc{
-            width: 50%;
+            width: 60%;
             // border-top: 2px solid $main;
             // border-bottom: 2px solid $main;
             border-radius: 0 15px 15px 0;
-            padding: 30px 20px;
+            // border-radius: 15px;
+            padding: 20px 15px;
             background-color: white;
             position: relative;
-            left: -20px;
-            font-size: 20px;
+            left: -18px;
+            font-size: 1.7vw;
         }
     }
 
@@ -560,6 +568,8 @@ footer{
                 position: relative;
                 left: unset;
                 top: 10px;
+                font-size: 20px;
+                text-align: center;
             }
         }
 
@@ -705,6 +715,8 @@ footer{
                 position: relative;
                 left: unset;
                 top: 10px;
+                font-size: 20px;
+                text-align: center;
             }
         }
 
