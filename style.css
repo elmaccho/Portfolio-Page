@@ -24,7 +24,8 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: white;
-  transition: 0.5s;
+  transition: 0.3s;
+  position: fixed;
 }
 header .title {
   font-size: 55px;
@@ -51,11 +52,9 @@ header .nav-menu ul li a:hover {
 }
 
 .sticky {
-  position: fixed;
   height: 100px;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(64, 40, 10, 0.35) 0px -2px 6px 0px;
   z-index: 1;
-  transition: 0.3s;
 }
 
 main {
@@ -67,6 +66,7 @@ main {
   align-items: center;
   flex-direction: column;
   gap: 130px;
+  margin-top: 160px;
 }
 main .user-info {
   padding: 115px 0;
@@ -599,6 +599,9 @@ footer .footer-info .footer-contact a {
     height: 150px;
     box-shadow: unset;
     z-index: 1;
+  }
+  main {
+    margin-top: unset;
   }
   main .user-info {
     flex-direction: column;
