@@ -5,6 +5,7 @@ const imgtars = document.querySelectorAll('.test')
 const navLinks = document.querySelectorAll('li')
 
 const header = document.querySelector('.header')
+const body = document.querySelector('body')
 
 const showImg = document.querySelector('.showImg')
 const closeImg = document.querySelector('.closeImg')
@@ -56,8 +57,6 @@ const outsideImage = (e) => {
         document.body.style.overflowY = 'scroll'
     }
 }
-
-// action="https://formsubmit.io/send/maciek.chojnacki22@wp.pl"
 
 const popMessage = () => {
     if(emailInput.value !== "" && nameInput.value !== "" && messageInput.value !== ""){
