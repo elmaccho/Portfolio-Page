@@ -74,16 +74,16 @@
         <div class="contact" id="contact">
             <h1 class="contactTitle">Kontakt</h1>
 
-            <form class="contact-form" action="https://formsubmit.io/send/jebacdisatetrisa2@wp.pl" method="POST">
+            <form class="contact-form" action="https://formsubmit.io/send/jebacdisatetrisa2@wp.pl" onsubmit="return popMessage()" method="POST">
 
-                <!-- <p class="formHeader">Imię i nazwisko</p> -->
+                <p class="formHeader">Imię i nazwisko</p>
                 <input type="text" 
                         name="text" 
                         id="text" 
                         class="nameInput" 
                         required>
                 
-                <!-- <p class="formHeader">E-mail</p> -->
+                <p class="formHeader">E-mail</p>
                 <input 
                     type="email" 
                     name="email" 
@@ -91,14 +91,12 @@
                     class="emailInput" 
                     required>
 
-                <!-- <p class="formHeader">Wiadomość</p> -->
+                <p class="formHeader">Wiadomość</p>
                 <textarea 
                     class="message" 
                     name="message" 
                     id="message" 
-                    required>
-                    Witam! Jestem zainteresowany usługami stolarskimi. 
-                    Bardzo proszę o kontakt.
+                    required>Witam! Jestem zainteresowany usługami stolarskimi. Bardzo proszę o kontakt.
                 </textarea>
             
                 <input 
