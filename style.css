@@ -257,7 +257,7 @@ main .redirect-box {
   align-items: center;
   flex-direction: column;
   width: 100%;
-  min-height: 78vh;
+  height: 78vh;
   background-color: #FFA500;
 }
 main .redirect-box .container {
