@@ -308,6 +308,27 @@ main{
         }
     }
 
+    .redirect-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+        min-height: 78vh;
+        background-color: $BGcolor;
+
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+        }
+    }
+
 }
 
 .showImg{
