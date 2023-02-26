@@ -58,7 +58,10 @@ header .nav-menu ul li a:hover {
 }
 
 main {
-  background-color: #FFA500;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='2000' preserveAspectRatio='none' viewBox='0 0 1440 2000'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1008%26quot%3b)' fill='none'%3e%3crect width='1440' height='2000' x='0' y='0' fill='rgba(255%2c 120%2c 0%2c 1)'%3e%3c/rect%3e%3cpath d='M0%2c986.372C180.453%2c1008.883%2c314.626%2c825.925%2c468.23%2c728.581C622.967%2c630.519%2c843.621%2c585.861%2c904.582%2c413.109C965.89%2c239.374%2c819.287%2c65.915%2c764.102%2c-109.861C718.674%2c-254.561%2c696.322%2c-403.726%2c609.17%2c-527.849C515.232%2c-661.638%2c402.179%2c-790.309%2c248.06%2c-844.816C90.299%2c-900.611%2c-80.211%2c-865.825%2c-243.541%2c-829.425C-416.776%2c-790.817%2c-597.86%2c-752.094%2c-724.761%2c-628.009C-856.389%2c-499.301%2c-924.66%2c-318.933%2c-951.827%2c-136.852C-979.088%2c45.854%2c-987.266%2c251.935%2c-878.311%2c401.111C-772.488%2c545.999%2c-548.034%2c520.939%2c-398.726%2c620.43C-245.499%2c722.533%2c-182.713%2c963.579%2c0%2c986.372' fill='%23cc6000'%3e%3c/path%3e%3cpath d='M1440 2687.404C1574.718 2688.367 1711.806 2672.078 1826.541 2601.469 1942.48 2530.119 2014.106 2411.282 2081.178 2292.816 2153.846 2164.467 2232.3469999999998 2033.689 2231.508 1886.198 2230.61 1728.233 2181.615 1566.385 2076.377 1448.577 1971.768 1331.473 1810.164 1296.415 1660.955 1247.4969999999998 1507.003 1197.024 1352.628 1130.962 1193.054 1158.981 1024.478 1188.5810000000001 847.422 1262.4160000000002 755.123 1406.551 664.994 1547.298 744.722 1731.184 720.722 1896.583 696.678 2062.289 541.739 2226.182 614.296 2377.0860000000002 687.104 2528.513 899.715 2536.858 1056.995 2595.967 1182.4 2643.0969999999998 1306.034 2686.446 1440 2687.404' fill='%23ff9333'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1008'%3e%3crect width='1440' height='2000' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
   width: 100%;
   height: max-content;
   display: flex;
@@ -481,7 +484,7 @@ footer .footer-info .footer-contact a {
     flex-direction: column;
   }
   main .user-info .user-image {
-    border: 3px solid rgb(255, 102, 0);
+    border: 3px solid #ff6600;
   }
   main .user-info .user-desc {
     border: unset;
@@ -607,7 +610,7 @@ footer .footer-info .footer-contact a {
     flex-direction: column;
   }
   main .user-info .user-image {
-    border: 3px solid rgb(255, 102, 0);
+    border: 3px solid #ff6600;
   }
   main .user-info .user-image img {
     width: 240px;
